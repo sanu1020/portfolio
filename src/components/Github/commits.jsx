@@ -15,14 +15,13 @@ function Commits() {
                 console.log(err)
             }
         }
-
         fetchCommits();
     },[])
     return (
-        <div>
+        <div className="flex flex-col md:flex-row justify-center my-10">
            <ul>
                 {commit.map((commit) => (
-                    <li key={commit.sha}>
+                    <li key={commit.sha} className="text-xs">
                         <strong>{commit.commit.author.name}</strong>: {commit.commit.message} :{commit.commit.author.date}
                     </li>
                 ))}
