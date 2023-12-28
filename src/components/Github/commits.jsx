@@ -22,7 +22,7 @@ function Commits() {
 
     return (
         <div className='flex'>
-            <div className='w-1.5/5 h-[200px] border border-grey-500 rounded flex-col justify-center p-4 mt-5 relative overflow-hidden ml-auto'>
+            <div className='mb-3 dashboard-changelog color-bg-default border color-border-muted p-3 rounded-2 ml-auto'>
             <span className="text-[12px]">Git Commits History</span>
                 {latestCommits.map((commit) => (
                     <ol key={commit.sha} className="flex flex-col md:flex-row relative border-l border-stone-200 dark:border-stone-700">
@@ -30,7 +30,7 @@ function Commits() {
                             <div className="absolute w-2 h-2 bg-stone-200 rounded-full mt-1 -left-1 border border-white dark:border-stone-700" />
                             <span className="text-[11px] max-h-[150px] overflow-y-hidden">{commit.commit.message}</span>
                             <div className="text-[10px] font-normal leading-none text-stone-400">
-                                Updated {formatDistanceToNow(new Date(commit.commit.author.date), { addSuffix: true })}
+                                Updated {formatDistanceToNow(new Date(commit.commit.author.date ), { addSuffix: true })}
                             </div>
                         </li>
                     </ol>

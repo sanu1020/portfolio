@@ -2,8 +2,9 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<div className="py-5 text-center">
-				<div className="container max-w-screen-lg mx-auto">
+		
+			<div className="py-5 text-center mb-auto">
+				<div className="container max-w-screen-lg mx-auto ">
 					<div>
 						<div className="flex flex-wrap justify-center gap-2">
 							<a 
@@ -51,6 +52,8 @@ function Footer() {
 				&copy; {new Date().getFullYear()} Sanujan Uthayasooriyan. All rights reserved.
 			</p>
 		</div>
+		
+		
 	);
 }
 

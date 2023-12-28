@@ -4,6 +4,8 @@ import StickyNavbar from './components/navbar';
 import About from './components/About/About';
 import Footer from './components/Footer';
 import GitHub from './components/Github/GitHub'
+import Blog from './components/Blog/Blog';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/github" element={<GitHub/>} />
             <Route path="/" element={<About/>} />
+            <Route path='/blog' element={<Blog/>} />
           </Routes>
 
           <Footer />
